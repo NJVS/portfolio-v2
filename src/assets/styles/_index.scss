@@ -1,0 +1,9 @@
+@use './reset.scss';
+@use './fonts.scss';
+@use './variables.scss';
+@use './include-media.scss';
+@use './typography.scss';
+
+body {
+  background-color: var(--c-neutral-950);
+}
