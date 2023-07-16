@@ -1,0 +1,48 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+
+  clip-path: polygon(100% 0, 100% 0, 100% 0%);
+
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+
+    li {
+      display: flex;
+      transform: translateX(100px);
+      opacity: 0;
+      visibility: hidden;
+
+      a.menu_item {
+        color: var(--c-neutral-900);
+        font-size: 3rem;
+        font-weight: 700;
+        font-style: italic;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        span {
+          color: var(--c-purple);
+        }
+
+        &[aria-current=page] {
+          color: var(--c-white);
+        }
+
+        &:hover:not([aria-current=page]) {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

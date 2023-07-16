@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  li {
+    display: flex;
+
+    a.menu_item {
+      color: var(--c-neutral-300);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      
+      span {
+        color: var(--c-purple);
+      }
+
+      &[aria-current=page] {
+        color: var(--c-white);  
+      }
+
+      &:hover:not([aria-current=page]) {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}

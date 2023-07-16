@@ -1,0 +1,35 @@
+.container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 30px;
+    width: var(--g-width);
+
+    // LOGO
+    .logo {
+      z-index: 999;
+      a {
+        display: flex;
+        align-items: center;
+
+        svg  {
+          width: 40px;
+
+          path {
+            transition: all 0.2s ease;
+          }
+        }
+
+        &:hover svg path {
+          fill: transparent;
+        }
+      }
+    }
+  }
+}

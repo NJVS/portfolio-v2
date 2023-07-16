@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  width: 45px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 999;
+
+  span {
+    position: absolute;
+    right: 0;
+    width: 45px;
+    height: 4px;
+    background-color: var(--c-neutral-300);
+    transition: all 0.3s ease;
+
+    &:first-child {
+      top: 0;
+      width: 45px;
+    }
+
+    &:last-child {
+      top: calc(100% - 4px);
+      width: 35px;
+    }
+  }
+}
