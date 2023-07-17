@@ -1,0 +1,77 @@
+@use 'assets/styles/include-media.scss' as *;
+
+.container {
+  position: relative;
+  height: 100vh;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: min(1110px, 90%);
+    height: 100%;
+
+    span {
+      color: var(--c-purple);
+    }
+
+    h1 {
+      margin-bottom: 1.375rem;
+      max-width: 750px;
+      color: var(--c-white);
+      font-weight: 600;
+      line-height: 1.25;
+
+      @include media('<=820px') {
+        text-align: center;
+        font-size: clamp(1.625rem, 5.5vw, 2.875rem)
+      }
+
+      @include media('<=468px') {
+        font-size: clamp(1.5rem, 7vw, 2rem)
+      }
+    }
+
+    p {
+      max-width: 574px;
+      color: var(--c-neutral-300);
+      font-size: 1.3125rem;
+      line-height: 1.25;
+
+      @include media('<=820px') {
+        margin: 0 auto;
+        max-width: 430px;
+        text-align: center;
+        font-size: clamp(1rem, 3vw, 1.3125rem);
+      }
+    }
+
+    .nav_arrow {
+      display: flex;
+      padding: 0;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .illustration_left {
+      position: absolute;
+      top: 25%;
+      left: -64px;
+      transform: translateX(-100%);
+    }
+
+    .illustration_right {
+      position: absolute;
+      top: 45%;
+      right: -64px;
+      transform: translateX(100%);
+    }
+  }
+}
