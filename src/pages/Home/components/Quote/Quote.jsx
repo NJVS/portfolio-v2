@@ -8,7 +8,7 @@ const Quote = () => {
     <section className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.content}>
-          <h4>Luck is what happens when preparation meets oportunity</h4>
+          <h3>Luck is what happens when preparation meets oportunity</h3>
           <img src={quoteIcon} className={styles.quote_top} />
           <img src={quoteIcon} className={styles.quote_bot} />
           <div className={styles.author}>
