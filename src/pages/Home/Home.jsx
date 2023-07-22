@@ -1,8 +1,10 @@
+import styles from './Home.module.scss';
+
 import Hero from './components/Hero/Hero';
 import Quote from './components/Quote/Quote';
 import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects';
+import AboutMe from './components/AboutMe/AboutMe';
 
-import styles from './Home.module.scss';
 
 const Home = () => {
   return (
@@ -10,6 +12,7 @@ const Home = () => {
       <Hero />
       <Quote />
       <FeaturedProjects />
+      <AboutMe />
     </div>
   )
 }
