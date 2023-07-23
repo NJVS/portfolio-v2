@@ -5,6 +5,7 @@ import Quote from './components/Quote/Quote';
 import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects';
 import AboutMe from './components/AboutMe/AboutMe';
 import Skills from './components/Skills/Skills';
+import Footer from 'components/Footer/Footer';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <FeaturedProjects />
       <AboutMe />
       <Skills />
+      <Footer />
     </div>
   )
 }
