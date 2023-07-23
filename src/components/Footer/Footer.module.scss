@@ -1,0 +1,136 @@
+@use 'assets/styles/include-media' as *;
+
+.container {
+  padding: 2rem 0 0.5rem;
+  background-color: var(--c-neutral-950);
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: auto;
+    width: min(1110px, 90%);
+
+    @include media('>630px') {
+      grid-template-columns: 1.5fr 0.5fr;
+      grid-template-areas:
+        "content socmed"
+        "attr attr";
+      gap: 1rem 0;
+    }
+
+    .content {
+      display: grid;
+      justify-items: center;
+
+      @include media('>630px') {
+        grid-area: content;
+        justify-items: flex-start;
+        align-items: center;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "logo email"
+          "paragraph paragraph";
+        gap: 0 1rem;
+      }
+
+      .logo {
+        @include media('>630px') {
+          grid-area: logo;
+        }
+
+        display: flex;
+        align-items: center;
+        gap: 0.6875rem;
+
+        h4 {
+          color: var(--c-white);
+          font-size: 1.5rem;
+        }
+
+        >svg {
+          width: 25px;
+          height: 25px;
+
+          path {
+            fill: var(--c-white);
+            stroke: var(--c-white);
+          }
+        }
+      }
+
+      >a {
+        @include media('>630px') {
+          grid-area: email;
+        }
+
+        color: var(--c-neutral-300);
+        font-size: 0.875rem;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      >p {
+        @include media('>630px') {
+          grid-area: paragraph;
+        }
+
+        color: var(--c-white);
+        text-align: center;
+      }
+    }
+
+    .socmed {
+      @include media('>630px') {
+        grid-area: socmed;
+      }
+
+      @include media('<=630px') {
+        display: flex;
+        justify-content: center;
+      }
+
+      h4 {
+        margin-bottom: 0.5rem;
+        color: var(--c-white);
+        font-size: 1.125rem;
+        font-weight: 400;
+
+        @include media('<=630px') {
+          display: none;
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        list-style-type: none;
+
+        a {
+          display: flex;
+
+          svg path {
+            fill: var(--c-neutral-300);
+            transition: fill 0.3s ease;
+          }
+
+          &:hover svg path {
+            fill: var(--c-white);
+          }
+        }
+      }
+    }
+
+    .attribution {
+      @include media('>630px') {
+        grid-area: attr;
+      }
+
+      color: var(--c-neutral-300);
+      text-align: center;
+    }
+  }
+}
