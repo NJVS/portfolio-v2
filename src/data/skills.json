@@ -1,0 +1,30 @@
+{
+  "front_end": {
+    "title": "Front-end",
+    "stacks": ["HTML", "CSS", "SCSS", "Javascript", "JQuery", "ReactJS", "NextJS"]
+  },
+  "build_tools": {
+    "title": "Build Tools",
+    "stacks": ["Node Package Manager", "Webpack"]
+  },
+  "cms": {
+    "title": "CMS",
+    "stacks": ["Strapi", "WordPress"]
+  },
+  "web_service": {
+    "title": "Web Service",
+    "stacks": ["Firebase"]
+  },
+  "uiux": {
+    "title": "UI/UX",
+    "stacks": ["Figma", "AdobeXD"]
+  },
+  "version_control": {
+    "title": "Version Control",
+    "stacks": ["Git", "Bitbucket", "Github"]
+  },
+  "others": {
+    "title": "Others",
+    "stacks": ["GSAP", "Bootstrap", "TailwindCSS"]
+  }
+}

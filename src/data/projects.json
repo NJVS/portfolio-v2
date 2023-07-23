@@ -1,0 +1,120 @@
+{
+  "featured": [
+    {
+      "title": "Tower of Hanoi",
+      "desc": "Up-to 8 floors and auto-solve function",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "liveUrl": "https://njvs.github.io/Tower-of-hanoi/",
+      "repoUrl": "https://github.com/NJVS/Tower-of-hanoi.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/tower-of-hanoi.jpg"
+    },
+    {
+      "title": "Sudoku Solver",
+      "desc": "Solves any 9x9 sudoku table using backtracking algorithm",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "liveUrl": "https://njvs.github.io/Sudoku-solver/",
+      "repoUrl": "https://github.com/NJVS/Sudoku-solver.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/sudoku-solver.jpg"
+    },
+    {
+      "title": "Url Shortener",
+      "desc": "Shortly is a tool to shorten a long link",
+      "stacks": ["react", "jsx", "scss", "api", "gsap"],
+      "liveUrl": "https://njvs.github.io/Shortly-url-shortener/",
+      "repoUrl": "https://github.com/NJVS/Shortly-url-shortener.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/shortly.jpg"
+    }
+  ],
+  "personal": [
+    {
+      "title": "Portfolio",
+      "desc": "You're using it rn",
+      "stacks": ["react", "jsx", "scss", "gsap"],
+      "liveUrl": "https://njvs.github.io/portfolio-v2/",
+      "repoUrl": "https://github.com/NJVS/portfolio-v2.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/portfolio-v2.jpg"
+    },
+    {
+      "title": "Tower of Hanoi",
+      "desc": "Up-to 8 floors and auto-solve function",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "liveUrl": "https://njvs.github.io/Tower-of-hanoi/",
+      "repoUrl": "https://github.com/NJVS/Tower-of-hanoi.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/tower-of-hanoi.jpg"
+    },
+    {
+      "title": "Sudoku Solver",
+      "desc": "Solves any 9x9 sudoku table using backtracking algorithm",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "liveUrl": "https://njvs.github.io/Sudoku-solver/",
+      "repoUrl": "https://github.com/NJVS/Sudoku-solver.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/sudoku-solver.jpg"
+    },
+    {
+      "title": "Portfolio v1",
+      "desc": "My old portfolio site",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "liveUrl": "https://njvs.github.io/profile/",
+      "repoUrl": "https://github.com/NJVS/profile.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/portfolio-v1.jpg"
+    },
+    {
+      "title": "Music Player",
+      "desc": "Simple music player for my fav songs",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "liveUrl": "https://njvs.github.io/MusicPlayer/",
+      "repoUrl": "https://github.com/NJVS/MusicPlayer.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/music-player.jpg"
+    }
+  ],
+  "fem": [
+    {
+      "title": "Url Shortener",
+      "desc": "Shortly is a tool to shorten a long link",
+      "stacks": ["react", "jsx", "scss", "api", "gsap"],
+      "liveUrl": "https://njvs.github.io/Shortly-url-shortener/",
+      "repoUrl": "https://github.com/NJVS/Shortly-url-shortener.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/shortly.jpg"
+    },
+    {
+      "title": "Rock Paper Scissors Lizard Spock",
+      "desc": "Rock paper scissors game with a twist",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "liveUrl": "https://njvs.github.io/Rock-Paper-Scissors-Lizard-Spock/",
+      "repoUrl": "https://github.com/NJVS/Rock-Paper-Scissors-Lizard-Spock.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/rpsls.jpg"
+    },
+    {
+      "title": "To-do app",
+      "desc": "Fullstack to-do app using firebase",
+      "stacks": ["react", "jsx", "styled-components", "firebase"],
+      "liveUrl": "https://njvs.github.io/Todo-app/",
+      "repoUrl": "https://github.com/NJVS/Todo-app.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/todo-app.jpg"
+    },
+    {
+      "title": "Easybank",
+      "desc": "Landing page for easybank",
+      "stacks": ["react", "jsx", "scss"],
+      "liveUrl": "https://njvs.github.io/easybank-landing-page/",
+      "repoUrl": "https://github.com/NJVS/easybank-landing-page.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/easybank.jpg"
+    },
+    {
+      "title": "Advice Generator",
+      "desc": "Generate random quotes of advice",
+      "stacks": ["html", "scss", "javascript", "api"],
+      "liveUrl": "https://njvs.github.io/Advice-generator-app/",
+      "repoUrl": "https://github.com/NJVS/Advice-generator-app.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/advice-generator.jpg"
+    },
+    {
+      "title": "Insure",
+      "desc": "Landing page for Insure",
+      "stacks": ["html", "scss", "javascript"],
+      "liveUrl": "https://njvs.github.io/Insure-landing-page/",
+      "repoUrl": "https://github.com/NJVS/Insure-landing-page.git",
+      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/insure.jpg"
+    }
+  ]
+}
