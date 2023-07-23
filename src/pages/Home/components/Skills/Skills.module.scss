@@ -1,0 +1,116 @@
+@use 'assets/styles/include-media' as *;
+
+.container {
+  padding: 2rem 0 4rem;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    width: min(1110px, 90%);
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        position: relative;
+        color: var(--c-white);
+        font-size: clamp(1.625rem, 4.5vw, 2.25rem);
+
+        span {
+          color: var(--c-purple);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 0.6875rem);
+          width: 250%;
+          height: 1px;
+          background-color: var(--c-purple);
+          transition: width 0.3s ease;
+
+          @include media('<=820px') {
+            width: 150%;
+          }
+
+          @include media('<=540px') {
+            width: calc(85vw - 150%);
+          }
+        }
+      }
+    }
+
+    .body {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+
+      .illustration {
+        position: absolute;
+        left: 0;
+
+        @include media('<=630px') {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 482px;
+        }
+
+        @include media('<=543px') {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+
+        }
+      }
+
+      .content_desktop {
+        position: inherit;
+        display: flex;
+        gap: 1rem;
+
+        @include media('<=543px') {
+          display: none;
+        }
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+
+      .content_mobile {
+        @include media('>543px') {
+          display: none;
+        }
+
+        position: inherit;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        @include media('<=466px') {
+          gap: 0.5rem;
+
+          >div {
+            gap: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
