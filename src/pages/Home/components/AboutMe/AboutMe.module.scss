@@ -42,8 +42,7 @@
           }
 
           @include media('<=540px') {
-            display: none;
-            width: calc(85vw - 100%);
+            width: calc(50vw - 100%);
           }
         }
       }
@@ -62,7 +61,7 @@
 
       .profile {
         position: relative;
-        
+
         @include media('>768px') {
           justify-self: flex-end;
         }
@@ -93,6 +92,7 @@
           }
         }
       }
+
       .content {
         @include media('>768px') {
           grid-row: 1;
@@ -104,11 +104,9 @@
         gap: 2rem;
         max-width: 483px;
 
-        
-
         p {
           color: var(--c-neutral-300);
-          
+
           @include media('>768px') {
             font-size: clamp(0.875rem, 1.75vw, 1rem);
           }
