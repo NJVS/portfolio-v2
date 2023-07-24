@@ -3,6 +3,8 @@ import projects from 'data/projects.json';
 import styles from './FeaturedProjects.module.scss';
 import { ReactComponent as Arrow } from 'assets/icons/arrow-right.svg';
 import CardProject from 'components/CardProject/CardProject';
+import dotSingle from 'assets/illustrations/dot-single.png';
+import reqSingle from 'assets/illustrations/rect-single.png';
 
 const FeaturedProjects = () => {
 
@@ -25,6 +27,12 @@ const FeaturedProjects = () => {
               repoUrl={item.repoUrl}
             />
           )}
+        </div>
+        <div className={styles.illustration_left}>
+          <img src={reqSingle} alt="" />
+        </div>
+        <div className={styles.illustration_right}>
+          <img src={dotSingle} alt="" />
         </div>
       </div>
     </section>

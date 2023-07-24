@@ -1,6 +1,9 @@
 import Button from 'components/Button/Button';
 import styles from './AboutMe.module.scss';
 import profilePic from 'assets/images/profile-pic.png';
+import dotRect from 'assets/illustrations/dot-rect.png';
+import rectDouble from 'assets/illustrations/rect-double.png';
+
 
 const AboutMe = () => {
   return (
@@ -28,6 +31,13 @@ const AboutMe = () => {
             </p>
             <Button type="link" url="/about-me" >More about me</Button>
           </div>
+        </div>
+
+        <div className={styles.illustration_left}>
+          <img src={dotRect} alt="" />
+        </div>
+        <div className={styles.illustration_right}>
+          <img src={rectDouble} alt="" />
         </div>
       </div>
     </section>
