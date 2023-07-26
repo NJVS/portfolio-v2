@@ -1,0 +1,18 @@
+@use 'assets/styles/include-media' as *;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1rem;
+  margin: auto;
+  width: min(1028px, 100%);
+
+  @include media('<912px') {
+    grid-template-columns: repeat(2, 1fr);
+    width: min(675px, 100%);
+  }
+
+  @include media('<=625px') {
+    grid-template-columns: 1fr;
+  }
+}
