@@ -3,6 +3,10 @@
 .container {
   padding: 7rem 0 4rem;
 
+  @include media('<=540px') {
+    padding-bottom: 0.5rem;
+  }
+
   .wrapper {
     margin: auto;
     width: min(1110px, 90%);
