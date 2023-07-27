@@ -15,6 +15,7 @@
   }
 
   .body {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -60,6 +61,22 @@
           margin-right: 0.375rem;
         }
       }
+    }
+
+    .illustration_left {
+      position: absolute;
+      top: -25%;
+      left: -60px;
+      transform: translateX(-100%);
+      // rotate: 90deg;
+    }
+
+    .illustration_right {
+      position: absolute;
+      top: -25%;
+      right: -290px;
+      transform: translateX(100%);
+      rotate: 90deg;
     }
   }
 }
