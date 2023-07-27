@@ -58,6 +58,10 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
+
+      @include media('<=540px') {
+        width: 35px;
+      }
     }
 
     .illustration_left {
