@@ -29,7 +29,7 @@ const AboutMe = () => {
               and majority of my personal projects came from problems I want to solve. By figuring 
               out how to do that, I improve and expand my coding skills.
             </p>
-            <Button type="link" url="/about-me" >More about me</Button>
+            <Button type="link" url="/aboutme" >More about me</Button>
           </div>
         </div>
 
