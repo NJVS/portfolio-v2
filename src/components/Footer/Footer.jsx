@@ -22,10 +22,10 @@ const Footer = () => {
         <div className={styles.socmed}>
           <h4>Media</h4>
           <ul>
-            <li><a href="" target='_blank'><IconGithub /></a></li>
-            <li><a href="" target='_blank'><IconLinkedin /></a></li>
-            <li><a href="" target='_blank'><Iconfb /></a></li>
-            <li><a href="" target='_blank'><Icontwitter /></a></li>
+            <li><a href="https://github.com/NJVS" target='_blank'><IconGithub /></a></li>
+            <li><a href="https://www.linkedin.com/in/neil-sagisi/" target='_blank'><IconLinkedin /></a></li>
+            <li><a href="https://m.me/neil.sagisi" target='_blank'><Iconfb /></a></li>
+            <li><a href="https://twitter.com/_lieneil" target='_blank'><Icontwitter /></a></li>
           </ul>
         </div>
         <p className={styles.attribution}>Copyright &copy;2023. Made by Neil</p>
