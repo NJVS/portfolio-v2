@@ -12,8 +12,8 @@ const CardProject = ({ thumbnail, stacks, title, desc, demoUrl, repoUrl }) => {
         <h4 className={styles.title}>{title}</h4>
         <p className={styles.desc}>{desc}</p>
         <div className={styles.links}>
-          <Button type='link' url={demoUrl}>Live Demo</Button>
-          <Button type='link' url={repoUrl}>Github</Button>
+          <Button type='link' url={demoUrl} target="_blank">Live Demo</Button>
+          <Button type='link' url={repoUrl} target="_blank">Github</Button>
         </div>
       </div>
     </div>
