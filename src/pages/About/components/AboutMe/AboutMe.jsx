@@ -26,7 +26,7 @@ const AboutMe = () => {
               and majority of my personal projects came from problems I want to solve. By figuring 
               out how to do that, I improve and expand my coding skills.
             </p>
-            <Button type="link" url="/about-me">Donwload CV</Button>
+            <Button type="link" url="https://www.dropbox.com/s/s6skg9gmkuvif1g/CV.pdf?dl=0" target="_target">Donwload CV</Button>
           </div>
         </div>
 
