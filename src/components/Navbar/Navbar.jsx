@@ -20,6 +20,8 @@ const Navbar = () => {
 
 	useEffect(() => {
 		setIsMenuToggled(false);
+		document.documentElement.style.overflow = '';
+
 		if (timeline) {
 			timeline.reverse();
 		}
@@ -28,8 +30,10 @@ const Navbar = () => {
 	// click handler
 	function menuTogglerClickHandler(e) {
 		if (e.currentTarget.hasAttribute('disabled')) return;  // i dont know why but the button still working while disabled whitout this
-
+		
+		window.scrollTo(0, 0);
 		menuTogglerRef.current.setAttribute('disabled', true)
+		document.documentElement.style.overflow = !isMenuToggled ? 'hidden' : '';
 
 		if (!isMenuToggled) {
 			setIsMenuToggled(true);
