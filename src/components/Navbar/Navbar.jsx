@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import useWindowDimensions from 'hooks/useWindowDimensions';
 
 import styles from './Navbar.module.scss';
-import { ReactComponent as Logo } from 'assets/icons/Logo-solid.svg';
+import Logo from 'assets/icons/Logo-solid.svg?react';
 import MenuDesktop from './components/MenuDesktop/MenuDesktop';
 import MenuMobile from './components/MenuMobile/MenuMobile';
 import MenuToggler from './components/MenuToggler/MenuToggler';

@@ -1,9 +1,9 @@
 import styles from './Footer.module.scss';
-import { ReactComponent as Logo } from 'assets/icons/Logo-solid.svg';
-import { ReactComponent as IconGithub } from 'assets/icons/github.svg';
-import { ReactComponent as IconLinkedin } from 'assets/icons/linkedin.svg';
-import { ReactComponent as Iconfb } from 'assets/icons/fb-messenger.svg';
-import { ReactComponent as Icontwitter } from 'assets/icons/twitter.svg';
+import Logo from 'assets/icons/Logo-solid.svg?react';
+import IconGithub from 'assets/icons/github.svg?react';
+import IconLinkedin from 'assets/icons/linkedin.svg?react';
+import Iconfb from 'assets/icons/fb-messenger.svg?react';
+import Icontwitter from 'assets/icons/twitter.svg?react';
 
 const Footer = () => {
   return (

@@ -16,14 +16,14 @@ const AboutMe = () => {
           <div className={styles.content}>
             <p>Hello, I'm Neil!</p>
             <p>
-              I am an aspiring front-end web developer seeking to kick-start my career in
-              the field. Although I missed my chance to start my developer career immediately
-              after graduation, I continue to strive to stay up-to-date with the latest trends
-              and technologies in ever-evolving world of web development.
+              Full Stack Developer with professional experience in building scalable web applications 
+              and platform features. Experienced in Laravel, Livewire, Tailwind CSS, and modern web 
+              development practices, with a focus on clean code, maintainable systems, and improving 
+              application performance.
             </p>
             <p>
-              I enjoy solving and hack things up for any immediate projects I want to pursue, 
-              and majority of my personal projects came from problems I want to solve. By figuring 
+              I enjoy solving and hack things up for any immediate projects I want to pursue,
+              and majority of my personal projects came from problems I want to solve. By figuring
               out how to do that, I improve and expand my coding skills.
             </p>
             <Button type="link" url="https://www.dropbox.com/s/s6skg9gmkuvif1g/CV.pdf?dl=0" target="_target">Donwload CV</Button>

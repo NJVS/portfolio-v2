@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import projects from 'data/projects.json';
 import styles from './FeaturedProjects.module.scss';
-import { ReactComponent as Arrow } from 'assets/icons/arrow-right.svg';
+import Arrow from 'assets/icons/arrow-right.svg?react';
 import ProjectShowcase from 'components/ProjectShowcase/ProjectShowcase';
 import dotSingle from 'assets/illustrations/dot-single.png';
 import reqSingle from 'assets/illustrations/rect-single.png';

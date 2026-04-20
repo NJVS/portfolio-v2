@@ -88,14 +88,14 @@
       }
 
       .content_mobile {
-        @include media('>543px') {
-          display: none;
-        }
-
         position: inherit;
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+
+        @include media('<=543px') {
+          display: grid;
+        }
 
         >div {
           display: flex;

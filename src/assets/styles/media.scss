@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:meta';
+@use 'sass:string';
+
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'desktop': 1024px,
+) !default;
+
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x':
+    '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)',
+  'retina3x':
+    '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi), (min-resolution: 3dppx)',
+) !default;
+
+$unit-intervals: (
+  'px': 1px,
+  'em': 0.01em,
+  'rem': 0.1rem,
+  '': 0,
+) !default;
+
+@function _trim($value) {
+  @if meta.type-of($value) != 'string' {
+    @return $value;
+  }
+
+  $start: 1;
+  $end: string.length($value);
+
+  @while $start <= $end and string.slice($value, $start, $start) == ' ' {
+    $start: $start + 1;
+  }
+
+  @while $end >= $start and string.slice($value, $end, $end) == ' ' {
+    $end: $end - 1;
+  }
+
+  @if $start > $end {
+    @return '';
+  }
+
+  @return string.slice($value, $start, $end);
+}
+
+@function _slice($items, $start: 1, $end: list.length($items)) {
+  @if list.length($items) == 0 or $start > $end {
+    @return ();
+  }
+
+  $result: ();
+
+  @for $index from $start through $end {
+    $result: list.append($result, list.nth($items, $index), comma);
+  }
+
+  @return $result;
+}
+
+@function _ends-with($value, $suffix) {
+  $value-length: string.length($value);
+  $suffix-length: string.length($suffix);
+
+  @if $suffix-length == 0 or $suffix-length > $value-length {
+    @return false;
+  }
+
+  @return string.slice($value, $value-length - $suffix-length + 1) == $suffix;
+}
+
+@function _expression-operator($expression) {
+  @each $operator in ('>=', '>', '<=', '<') {
+    @if string.index($expression, $operator) {
+      @return $operator;
+    }
+  }
+
+  @error "No operator found in `#{$expression}`.";
+}
+
+@function _expression-dimension($expression, $operator) {
+  $operator-index: string.index($expression, $operator);
+
+  @if $operator-index == 1 {
+    @return 'width';
+  }
+
+  $dimension: _trim(string.slice($expression, 1, $operator-index - 1));
+
+  @if string.length($dimension) == 0 {
+    @return 'width';
+  }
+
+  @return $dimension;
+}
+
+@function _expression-prefix($operator) {
+  @if list.index(('<', '<='), $operator) {
+    @return 'max';
+  }
+
+  @return 'min';
+}
+
+@function _interval-for($value) {
+  @if meta.type-of($value) == 'number' {
+    $unit: math.unit($value);
+
+    @if map.has-key($unit-intervals, $unit) {
+      @return map.get($unit-intervals, $unit);
+    }
+
+    @error "Unknown unit `#{$unit}`.";
+  }
+
+  @if meta.type-of($value) == 'string' {
+    @each $unit, $interval in $unit-intervals {
+      @if $unit != '' and _ends-with($value, $unit) {
+        @return $interval;
+      }
+    }
+
+    @return map.get($unit-intervals, '');
+  }
+
+  @error "Unsupported media query value `#{$value}`.";
+}
+
+@function _apply-exclusive-boundary($value, $operator) {
+  @if not list.index(('>', '<'), $operator) {
+    @return $value;
+  }
+
+  $interval: _interval-for($value);
+
+  @if meta.type-of($value) == 'number' {
+    @if $operator == '>' {
+      @return $value + $interval;
+    }
+
+    @return $value - $interval;
+  }
+
+  @if $operator == '>' {
+    @return string.unquote("calc(#{$value} + #{$interval})");
+  }
+
+  @return string.unquote("calc(#{$value} - #{$interval})");
+}
+
+@function _expression-value($expression, $operator) {
+  $operator-index: string.index($expression, $operator);
+  $raw-value: _trim(string.slice($expression, $operator-index + string.length($operator)));
+
+  @if map.has-key($breakpoints, $raw-value) {
+    @return _apply-exclusive-boundary(map.get($breakpoints, $raw-value), $operator);
+  }
+
+  @return _apply-exclusive-boundary(string.unquote($raw-value), $operator);
+}
+
+@function _parse-expression($expression) {
+  @if map.has-key($media-expressions, $expression) {
+    @return string.unquote(map.get($media-expressions, $expression));
+  }
+
+  $operator: _expression-operator($expression);
+  $dimension: _expression-dimension($expression, $operator);
+  $prefix: _expression-prefix($operator);
+  $value: _expression-value($expression, $operator);
+
+  @return string.unquote("(#{$prefix}-#{$dimension}: #{$value})");
+}
+
+@mixin media-context($tweakpoints: (), $tweak-media-expressions: ()) {
+  $global-breakpoints: $breakpoints;
+  $global-media-expressions: $media-expressions;
+
+  $breakpoints: map.merge($breakpoints, $tweakpoints) !global;
+  $media-expressions: map.merge($media-expressions, $tweak-media-expressions) !global;
+
+  @content;
+
+  $breakpoints: $global-breakpoints !global;
+  $media-expressions: $global-media-expressions !global;
+}
+
+@mixin media($conditions...) {
+  @if list.length($conditions) == 0 {
+    @content;
+  } @else {
+    $condition: _parse-expression(list.nth($conditions, 1));
+
+    @media #{$condition} {
+      @include media(_slice($conditions, 2)...) {
+        @content;
+      }
+    }
+  }
+}

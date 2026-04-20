@@ -1,6 +1,6 @@
 import styles from './Hero.module.scss';
 import useWindowDimensions from 'hooks/useWindowDimensions';
-import { ReactComponent as Arrow } from 'assets/icons/arrows.svg';
+import Arrow from 'assets/icons/arrows.svg?react';
 import rectdouble from 'assets/illustrations/rect-double.png';
 import dotrect from 'assets/illustrations/dot-rect.png';
 
