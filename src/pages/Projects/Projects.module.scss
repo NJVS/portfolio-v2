@@ -1,3 +1,43 @@
 .container {
   position: relative;
+  min-height: 100vh;
+
+  .filteredSection {
+    padding: 1rem 0 4rem;
+
+    .filteredWrapper {
+      width: min(1140px, 90%);
+      margin: 0 auto;
+
+      .emptyState {
+        text-align: center;
+        padding: 4rem 1rem;
+        background: rgba(40, 44, 52, 0.5);
+        border: 1px dashed var(--c-neutral-700, #495162);
+        border-radius: 6px;
+
+        p {
+          color: var(--c-neutral-300);
+          font-size: 1.1rem;
+          margin-bottom: 1.25rem;
+        }
+
+        .resetBtn {
+          padding: 0.5rem 1.25rem;
+          background: rgba(199, 120, 221, 0.15);
+          border: 1px solid var(--c-purple);
+          color: var(--c-white);
+          font-family: var(--ff-primary);
+          cursor: pointer;
+          border-radius: 4px;
+          transition: all 0.2s ease;
+
+          &:hover {
+            background: var(--c-purple);
+            color: #0d1117;
+          }
+        }
+      }
+    }
+  }
 }

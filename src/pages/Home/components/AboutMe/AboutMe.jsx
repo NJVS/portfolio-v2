@@ -4,32 +4,35 @@ import profilePic from 'assets/images/profile-pic.png';
 import dotRect from 'assets/illustrations/dot-rect.png';
 import rectDouble from 'assets/illustrations/rect-double.png';
 
-
 const AboutMe = () => {
   return (
     <section className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.header}>
-          <h2 className={styles.title}><span>#</span>about-me</h2>
+          <h2 className={styles.title}>
+            <span>#</span>about-me
+          </h2>
         </div>
         <div className={styles.body}>
           <div className={styles.profile}>
-            <img src={profilePic} />
+            <img src={profilePic} alt="Neil Jonathan" />
           </div>
           <div className={styles.content}>
             <p>Hello, I'm Neil!</p>
             <p>
-              Full Stack Developer with professional experience in building scalable web applications 
-              and platform features. Experienced in Laravel, Livewire, Tailwind CSS, and modern web 
-              development practices, with a focus on clean code, maintainable systems, and improving 
-              application performance.
+              Full-Stack Developer and AI Engineer experienced in architecting scalable
+              web applications, interactive user interfaces, and intelligent LLM-driven features.
+              Skilled across the modern JavaScript/TypeScript ecosystem (React 19, Next.js, Vite),
+              Laravel, Livewire, Tailwind CSS, and AI APIs.
             </p>
             <p>
-              I enjoy solving and hack things up for any immediate projects I want to pursue, 
-              and majority of my personal projects came from problems I want to solve. By figuring 
-              out how to do that, I improve and expand my coding skills.
+              I thrive on solving real-world problems by blending clean engineering with
+              cutting-edge AI workflows—building maintainable systems that empower users
+              and elevate product performance.
             </p>
-            <Button type="link" url="/aboutme" >More about me</Button>
+            <Button type="link" url="/about">
+              More about me -&gt;
+            </Button>
           </div>
         </div>
 
@@ -41,7 +44,7 @@ const AboutMe = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

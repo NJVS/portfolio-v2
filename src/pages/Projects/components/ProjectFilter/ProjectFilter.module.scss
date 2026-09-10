@@ -1,0 +1,116 @@
+@use 'assets/styles/include-media' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.5rem auto 2.5rem;
+  width: min(1140px, 90%);
+
+  .searchWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 580px;
+
+    .searchIcon {
+      position: absolute;
+      left: 14px;
+      font-size: 0.9rem;
+      pointer-events: none;
+      opacity: 0.7;
+    }
+
+    .searchInput {
+      width: 100%;
+      padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+      background: rgba(40, 44, 52, 0.8);
+      border: 1px solid var(--c-neutral-700, #495162);
+      color: var(--c-white);
+      font-family: var(--ff-primary);
+      font-size: 0.875rem;
+      border-radius: 4px;
+      outline: none;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+      &::placeholder {
+        color: var(--c-neutral-300);
+        opacity: 0.6;
+      }
+
+      &:focus {
+        border-color: var(--c-purple);
+        box-shadow: 0 0 12px rgba(199, 120, 221, 0.25);
+      }
+    }
+
+    .clearBtn {
+      position: absolute;
+      right: 12px;
+      background: transparent;
+      border: none;
+      color: var(--c-neutral-300);
+      cursor: pointer;
+      font-size: 0.875rem;
+      padding: 4px;
+
+      &:hover {
+        color: var(--c-white);
+      }
+    }
+  }
+
+  .filtersWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .filterPills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      .pill {
+        padding: 0.4rem 0.9rem;
+        background: rgba(40, 44, 52, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--c-neutral-300);
+        font-family: var(--ff-primary);
+        font-size: 0.8125rem;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--c-white);
+          border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        &.active {
+          background: rgba(199, 120, 221, 0.2);
+          border-color: var(--c-purple);
+          color: var(--c-white);
+          box-shadow: 0 0 10px rgba(199, 120, 221, 0.3);
+        }
+
+        &.aiPill.active {
+          background: rgba(97, 218, 251, 0.2);
+          border-color: var(--c-cyan, #61dafb);
+          color: var(--c-white);
+          box-shadow: 0 0 12px rgba(97, 218, 251, 0.35);
+        }
+      }
+    }
+
+    .countBadge {
+      color: var(--c-neutral-300);
+      font-size: 0.8125rem;
+      padding: 0.3rem 0.7rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 3px;
+    }
+  }
+}

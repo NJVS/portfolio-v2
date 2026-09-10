@@ -1,24 +1,14 @@
 import styles from './ProjectShowcase.module.scss';
 import Card from './Card/Card';
 
-const ProjectShowcase = ({ projects }) => {
-  // console.log(projects[0].title)
-
+const ProjectShowcase = ({ projects = [] }) => {
   return (
     <div className={styles.container}>
-      {projects.map((item, index) =>
-        <Card
-          key={index}
-          thumbnail={item.thumbnail}
-          stacks={item.stacks.join(' ')}
-          title={item.title}
-          desc={item.desc}
-          demoUrl={item.liveUrl}
-          repoUrl={item.repoUrl}
-        />
-      )}
+      {projects.map((item, index) => (
+        <Card key={item.id || item.title || index} project={item} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default ProjectShowcase
+export default ProjectShowcase;

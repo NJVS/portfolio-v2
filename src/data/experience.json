@@ -1,0 +1,69 @@
+{
+  "work": [
+    {
+      "id": "hpl-game-design",
+      "role": "Mid Front-End Developer",
+      "company": "HPL Game Design",
+      "period": "May 2026 - Sept 2026",
+      "location": "Philippines",
+      "summary": "Architected and developed high-engagement, lightweight playable mobile ads and interactive 2D gameplay loops adhering to strict ad-network constraints.",
+      "highlights": [
+        "Architected and developed lightweight, interactive playable ads using React.js and modern JavaScript, strictly adhering to ad network performance and file-size constraints.",
+        "Engineered complex 2D gameplay loops and interactive mechanics using Phaser.js for high-converting mobile ad experiences.",
+        "Integrated Spine 2D skeletal animations, optimizing texture atlases and canvas render calls for smooth 60 FPS mobile performance.",
+        "Profiled and optimized asset loading and memory management to minimize load latency and drive conversion rates."
+      ],
+      "stacks": ["React.js", "JavaScript (ES6+)", "Phaser.js", "Spine 2D", "WebGL / Canvas", "Performance Profiling"]
+    },
+    {
+      "id": "realhomes-property",
+      "role": "Full-Stack Developer",
+      "company": "RealHomes Property Inc.",
+      "period": "Apr 2024 - May 2026",
+      "location": "Philippines",
+      "summary": "Engineered scalable full-stack real estate web applications and backend systems using Laravel, Livewire, and modern responsive frontend frameworks.",
+      "highlights": [
+        "Developed and maintained scalable full-stack web applications using Laravel (PHP), Livewire, MySQL, and built responsive, interactive UIs with JavaScript, Alpine.js, HTML5, CSS3, and Tailwind CSS ensuring performance, maintainability, and a seamless user experience.",
+        "Optimized database queries and backend performance, reducing load times and improving system efficiency.",
+        "Applied MVC architecture, clean code principles, and reusable components for maintainable development."
+      ],
+      "stacks": ["Laravel", "Livewire", "PHP", "MySQL", "Alpine.js", "Tailwind CSS", "JavaScript", "MVC Architecture"]
+    },
+    {
+      "id": "appen",
+      "role": "AI Data Annotator",
+      "company": "Appen",
+      "period": "Aug 2019 - Jun 2022",
+      "location": "Remote",
+      "summary": "Trained and validated machine learning and artificial intelligence models through high-precision dataset curation and natural language processing tasks.",
+      "highlights": [
+        "Annotated and labeled large datasets (text, images, and audio) to train and improve machine learning and AI models.",
+        "Performed data validation and quality assurance to maintain consistency across datasets.",
+        "Worked with natural language processing (NLP) tasks such as text classification, sentiment analysis, and entity tagging."
+      ],
+      "stacks": ["NLP", "Machine Learning Datasets", "Text Classification", "Sentiment Analysis", "Data QA", "Entity Tagging"]
+    },
+    {
+      "id": "land-management-bureau",
+      "role": "Network and System Administrator",
+      "company": "Land Management Bureau",
+      "period": "May 2018 - Aug 2019",
+      "location": "Philippines",
+      "summary": "Maintained critical enterprise network infrastructure, hardware switches/routers, and user access protocols following security best practices.",
+      "highlights": [
+        "Installed, configured, and maintained network infrastructure including routers, switches, and LAN/WAN connectivity.",
+        "Managed user accounts, permissions, and access control following security best practices."
+      ],
+      "stacks": ["Network Infrastructure", "System Administration", "LAN/WAN", "Security Best Practices", "Hardware Configuration"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Lyceum of the Philippines University",
+      "location": "Intramuros, Manila",
+      "period": "2011 - 2017",
+      "description": "Comprehensive foundation in computer science, algorithms, software engineering, systems architecture, and database management."
+    }
+  ]
+}

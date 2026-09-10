@@ -1,120 +1,194 @@
 {
   "featured": [
     {
+      "id": "ai-agent-hub",
+      "title": "AI Agent Orchestrator",
+      "desc": "Multi-agent LLM workflow orchestrator with RAG document indexing, node-based execution, and telemetry.",
+      "stacks": ["react", "gemini-api", "rag", "vector-db", "gsap"],
+      "imageKey": "ai-agent-hub",
+      "liveUrl": "https://njvs.github.io/portfolio-v2/",
+      "repoUrl": "https://github.com/NJVS",
+      "category": "AI & Full-Stack",
+      "isAI": true
+    },
+    {
+      "id": "prompt-ai-studio",
+      "title": "PromptLab AI Studio",
+      "desc": "Multimodal LLM experimentation studio with token estimation, side-by-side prompt comparisons, and prompt optimization.",
+      "stacks": ["react", "llm-apis", "tailwind", "prompt-engineering"],
+      "imageKey": "prompt-ai-studio",
+      "liveUrl": "https://njvs.github.io/portfolio-v2/",
+      "repoUrl": "https://github.com/NJVS",
+      "category": "AI & Full-Stack",
+      "isAI": true
+    },
+    {
+      "id": "tower-of-hanoi",
       "title": "Tower of Hanoi",
-      "desc": "Up-to 8 floors and auto-solve function",
+      "desc": "Up-to 8 floors puzzle with recursive backtracking auto-solver and step-by-step visualization.",
       "stacks": ["html", "scss", "javascript", "webpack"],
+      "imageKey": "tower-of-hanoi",
       "liveUrl": "https://njvs.github.io/Tower-of-hanoi/",
       "repoUrl": "https://github.com/NJVS/Tower-of-hanoi.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/tower-of-hanoi.jpg"
+      "category": "Algorithms & Web"
     },
     {
-      "title": "Sudoku Solver",
-      "desc": "Solves any 9x9 sudoku table using backtracking algorithm",
-      "stacks": ["html", "scss", "javascript", "webpack"],
-      "liveUrl": "https://njvs.github.io/Sudoku-solver/",
-      "repoUrl": "https://github.com/NJVS/Sudoku-solver.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/sudoku-solver.jpg"
-    },
-    {
-      "title": "Url Shortener",
-      "desc": "Shortly is a tool to shorten a long link",
-      "stacks": ["react", "jsx", "scss", "api", "gsap"],
+      "id": "shortly",
+      "title": "Shortly Link Shortener",
+      "desc": "Fast URL shortening web app integrated with public REST APIs, clipboard sync, and GSAP micro-animations.",
+      "stacks": ["react", "jsx", "scss", "rest-api", "gsap"],
+      "imageKey": "shortly",
       "liveUrl": "https://njvs.github.io/Shortly-url-shortener/",
       "repoUrl": "https://github.com/NJVS/Shortly-url-shortener.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/shortly.jpg"
+      "category": "Web Applications"
+    },
+    {
+      "id": "sudoku-solver",
+      "title": "Sudoku Solver",
+      "desc": "Solves any 9x9 Sudoku board in milliseconds utilizing constraint propagation and backtracking.",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "imageKey": "sudoku-solver",
+      "liveUrl": "https://njvs.github.io/Sudoku-solver/",
+      "repoUrl": "https://github.com/NJVS/Sudoku-solver.git",
+      "category": "Algorithms & Web"
+    }
+  ],
+  "ai": [
+    {
+      "id": "ai-agent-hub",
+      "title": "AI Agent Orchestrator",
+      "desc": "Multi-agent LLM workflow orchestrator with RAG document indexing, node-based execution, and telemetry.",
+      "stacks": ["react", "gemini-api", "rag", "vector-db", "gsap"],
+      "imageKey": "ai-agent-hub",
+      "liveUrl": "https://njvs.github.io/portfolio-v2/",
+      "repoUrl": "https://github.com/NJVS",
+      "category": "AI & Full-Stack",
+      "isAI": true
+    },
+    {
+      "id": "prompt-ai-studio",
+      "title": "PromptLab AI Studio",
+      "desc": "Multimodal LLM experimentation studio with token estimation, side-by-side prompt comparisons, and prompt optimization.",
+      "stacks": ["react", "llm-apis", "tailwind", "prompt-engineering"],
+      "imageKey": "prompt-ai-studio",
+      "liveUrl": "https://njvs.github.io/portfolio-v2/",
+      "repoUrl": "https://github.com/NJVS",
+      "category": "AI & Full-Stack",
+      "isAI": true
     }
   ],
   "personal": [
     {
-      "title": "Portfolio",
-      "desc": "You're using it rn",
-      "stacks": ["react", "jsx", "scss", "gsap"],
+      "id": "portfolio-v2",
+      "title": "Portfolio v2",
+      "desc": "Next-gen personal developer showcase with embedded AI Assistant, dark cyber theme, and React 19.",
+      "stacks": ["react", "jsx", "scss", "gsap", "ai-assistant"],
+      "imageKey": "portfolio-v2",
       "liveUrl": "https://njvs.github.io/portfolio-v2/",
       "repoUrl": "https://github.com/NJVS/portfolio-v2.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/portfolio-v2.jpg"
+      "category": "Web Applications"
     },
     {
+      "id": "tower-of-hanoi",
       "title": "Tower of Hanoi",
-      "desc": "Up-to 8 floors and auto-solve function",
+      "desc": "Up-to 8 floors puzzle with recursive backtracking auto-solver and step-by-step visualization.",
       "stacks": ["html", "scss", "javascript", "webpack"],
+      "imageKey": "tower-of-hanoi",
       "liveUrl": "https://njvs.github.io/Tower-of-hanoi/",
       "repoUrl": "https://github.com/NJVS/Tower-of-hanoi.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/tower-of-hanoi.jpg"
+      "category": "Algorithms & Web"
     },
     {
+      "id": "sudoku-solver",
       "title": "Sudoku Solver",
-      "desc": "Solves any 9x9 sudoku table using backtracking algorithm",
+      "desc": "Solves any 9x9 Sudoku board in milliseconds utilizing constraint propagation and backtracking.",
       "stacks": ["html", "scss", "javascript", "webpack"],
+      "imageKey": "sudoku-solver",
       "liveUrl": "https://njvs.github.io/Sudoku-solver/",
       "repoUrl": "https://github.com/NJVS/Sudoku-solver.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/sudoku-solver.jpg"
+      "category": "Algorithms & Web"
     },
     {
-      "title": "Portfolio v1",
-      "desc": "My old portfolio site",
-      "stacks": ["html", "scss", "javascript", "webpack"],
-      "liveUrl": "https://njvs.github.io/profile/",
-      "repoUrl": "https://github.com/NJVS/profile.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/portfolio-v1.jpg"
-    },
-    {
-      "title": "Music Player",
-      "desc": "Simple music player for my fav songs",
-      "stacks": ["html", "scss", "javascript", "webpack"],
+      "id": "music-player",
+      "title": "Retro Music Player",
+      "desc": "Custom web audio player with playlist control, seek bar, and album visualization.",
+      "stacks": ["html", "scss", "javascript", "web-audio"],
+      "imageKey": "music-player",
       "liveUrl": "https://njvs.github.io/MusicPlayer/",
       "repoUrl": "https://github.com/NJVS/MusicPlayer.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/music-player.jpg"
+      "category": "Web Applications"
+    },
+    {
+      "id": "portfolio-v1",
+      "title": "Portfolio v1",
+      "desc": "Neil's original personal web portfolio highlighting early front-end designs.",
+      "stacks": ["html", "scss", "javascript", "webpack"],
+      "imageKey": "portfolio-v1",
+      "liveUrl": "https://njvs.github.io/profile/",
+      "repoUrl": "https://github.com/NJVS/profile.git",
+      "category": "Archive"
     }
   ],
   "fem": [
     {
-      "title": "Url Shortener",
-      "desc": "Shortly is a tool to shorten a long link",
-      "stacks": ["react", "jsx", "scss", "api", "gsap"],
+      "id": "shortly",
+      "title": "Shortly Link Shortener",
+      "desc": "Fast URL shortening web app integrated with public REST APIs, clipboard sync, and GSAP micro-animations.",
+      "stacks": ["react", "jsx", "scss", "rest-api", "gsap"],
+      "imageKey": "shortly",
       "liveUrl": "https://njvs.github.io/Shortly-url-shortener/",
       "repoUrl": "https://github.com/NJVS/Shortly-url-shortener.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/shortly.jpg"
+      "category": "Web Applications"
     },
     {
-      "title": "Rock Paper Scissors Lizard Spock",
-      "desc": "Rock paper scissors game with a twist",
-      "stacks": ["html", "scss", "javascript", "webpack"],
-      "liveUrl": "https://njvs.github.io/Rock-Paper-Scissors-Lizard-Spock/",
-      "repoUrl": "https://github.com/NJVS/Rock-Paper-Scissors-Lizard-Spock.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/rpsls.jpg"
-    },
-    {
-      "title": "To-do app",
-      "desc": "Fullstack to-do app using firebase",
+      "id": "todo-app",
+      "title": "Fullstack Task Manager",
+      "desc": "Real-time task management system with authentication, persistent cloud storage, and responsive filtering.",
       "stacks": ["react", "jsx", "styled-components", "firebase"],
+      "imageKey": "todo-app",
       "liveUrl": "https://njvs.github.io/Todo-app/",
       "repoUrl": "https://github.com/NJVS/Todo-app.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/todo-app.jpg"
+      "category": "Full-Stack"
     },
     {
-      "title": "Easybank",
-      "desc": "Landing page for easybank",
-      "stacks": ["react", "jsx", "scss"],
+      "id": "rpsls",
+      "title": "RPSLS Game",
+      "desc": "Interactive Rock Paper Scissors Lizard Spock game with stateful score tracking and animated rule engine.",
+      "stacks": ["html", "scss", "javascript", "game-logic"],
+      "imageKey": "rpsls",
+      "liveUrl": "https://njvs.github.io/Rock-Paper-Scissors-Lizard-Spock/",
+      "repoUrl": "https://github.com/NJVS/Rock-Paper-Scissors-Lizard-Spock.git",
+      "category": "Frontend Challenges"
+    },
+    {
+      "id": "easybank",
+      "title": "Easybank Landing Page",
+      "desc": "Modern responsive digital banking portal with pixel-perfect responsive layout and gradient branding.",
+      "stacks": ["react", "jsx", "scss", "responsive-ui"],
+      "imageKey": "easybank",
       "liveUrl": "https://njvs.github.io/easybank-landing-page/",
       "repoUrl": "https://github.com/NJVS/easybank-landing-page.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/easybank.jpg"
+      "category": "Landing Pages"
     },
     {
+      "id": "advice-generator",
       "title": "Advice Generator",
-      "desc": "Generate random quotes of advice",
-      "stacks": ["html", "scss", "javascript", "api"],
+      "desc": "Clean minimalist app that fetches dynamic wisdom via external Advice Slip JSON API with dice roll animations.",
+      "stacks": ["html", "scss", "javascript", "rest-api"],
+      "imageKey": "advice-generator",
       "liveUrl": "https://njvs.github.io/Advice-generator-app/",
       "repoUrl": "https://github.com/NJVS/Advice-generator-app.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/advice-generator.jpg"
+      "category": "Web Applications"
     },
     {
-      "title": "Insure",
-      "desc": "Landing page for Insure",
-      "stacks": ["html", "scss", "javascript"],
+      "id": "insure",
+      "title": "Insure Landing Page",
+      "desc": "Clean and accessible landing page for insurance services with multi-column layout.",
+      "stacks": ["html", "scss", "javascript", "semantic-html"],
+      "imageKey": "insure",
       "liveUrl": "https://njvs.github.io/Insure-landing-page/",
       "repoUrl": "https://github.com/NJVS/Insure-landing-page.git",
-      "thumbnail": "https://njvs.github.io/hosted-assets/project-thumbnail/insure.jpg"
+      "category": "Landing Pages"
     }
   ]
 }

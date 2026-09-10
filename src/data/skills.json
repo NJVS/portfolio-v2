@@ -1,30 +1,26 @@
 {
+  "ai_engineering": {
+    "title": "AI & LLMs",
+    "stacks": ["Gemini API", "OpenAI API", "Prompt Engineering", "NLP & Data Annotation", "RAG & Embeddings", "AI Agents"]
+  },
   "front_end": {
     "title": "Front-end",
-    "stacks": ["HTML", "CSS", "SCSS", "Javascript", "JQuery", "ReactJS", "NextJS"]
+    "stacks": ["React 19", "Next.js", "JavaScript (ES6+)", "Phaser.js", "Spine 2D", "TailwindCSS", "GSAP"]
   },
-  "build_tools": {
-    "title": "Build Tools",
-    "stacks": ["Node Package Manager", "Webpack"]
+  "back_end": {
+    "title": "Back-end",
+    "stacks": ["Laravel", "Livewire", "PHP", "Alpine.js", "MySQL", "Node.js", "REST APIs"]
   },
-  "cms": {
-    "title": "CMS",
-    "stacks": ["Strapi", "WordPress"]
-  },
-  "web_service": {
-    "title": "Web Service",
-    "stacks": ["Firebase"]
+  "languages": {
+    "title": "Languages",
+    "stacks": ["JavaScript", "TypeScript", "PHP", "Python", "HTML5", "CSS3 / SCSS"]
   },
   "uiux": {
-    "title": "UI/UX",
-    "stacks": ["Figma", "AdobeXD"]
+    "title": "UI/UX & Animations",
+    "stacks": ["Figma", "Spine 2D Skeletal", "Playable Ads", "Responsive UI", "Micro-animations"]
   },
-  "version_control": {
-    "title": "Version Control",
-    "stacks": ["Git", "Bitbucket", "Github"]
-  },
-  "others": {
-    "title": "Others",
-    "stacks": ["GSAP", "Bootstrap", "TailwindCSS"]
+  "tools_devops": {
+    "title": "Tools & Cloud",
+    "stacks": ["Git", "GitHub", "Vite", "AWS S3", "Laravel Cloud", "npm", "Webpack"]
   }
 }

@@ -7,20 +7,28 @@ const MenuMobile = ({ isMenuToggled }, ref) => {
     <div ref={ref} className={`${styles.container} ${isMenuToggled ? styles.toggled : ''}`}>
       <ul className={styles.wrapper}>
         <li>
-          <NavLink to="/" className={styles.menu_item}><span>#</span>home</NavLink>
+          <NavLink to="/" className={styles.menu_item}>
+            <span>#</span>home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/projects" className={styles.menu_item}><span>#</span>projects</NavLink>
+          <NavLink to="/projects" className={styles.menu_item}>
+            <span>#</span>projects
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/aboutme" className={styles.menu_item}><span>#</span>about-me</NavLink>
+          <NavLink to="/about" className={styles.menu_item}>
+            <span>#</span>about-me
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/contacts" className={styles.menu_item}><span>#</span>contacts</NavLink>
+          <NavLink to="/contacts" className={styles.menu_item}>
+            <span>#</span>contacts
+          </NavLink>
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default forwardRef(MenuMobile)
+export default forwardRef(MenuMobile);

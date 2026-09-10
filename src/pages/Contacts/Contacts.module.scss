@@ -22,43 +22,81 @@
     flex-grow: 1;
     margin: auto;
     padding-bottom: 4rem;
-    width: min(1110px, 90%);
+    width: min(1140px, 90%);
+    gap: 3rem;
 
     @include media('<=768px') {
       flex-direction: column;
-      justify-content: unset;
-      gap: 4rem;
+      gap: 2.5rem;
       .contact_info {
-        align-self: flex-end;
+        align-self: flex-start;
+        width: 100%;
       }
     }
 
-    p {
-      max-width: 505px;
-      color: var(--c-neutral-300);
-      font-size: clamp(0.875rem, 1.75vw, 1rem);
+    .intro {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 580px;
+
+      p {
+        color: var(--c-neutral-300);
+        font-size: clamp(0.9375rem, 1.75vw, 1.0625rem);
+        line-height: 1.6;
+        margin: 0;
+      }
     }
 
     .contact_info {
-      padding: 1rem;
-      border: 1px solid var(--c-neutral-300);
+      padding: 1.5rem;
+      background: rgba(33, 37, 43, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--c-neutral-800, #353b45);
+      border-radius: 6px;
+      min-width: 320px;
 
       h5 {
-        margin-bottom: 1rem;
+        margin: 0 0 1.25rem;
         color: var(--c-white);
-        font-size: clamp(0.875rem, 1.75vw, 1rem);
-        font-weight: 500;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 0.5rem;
       }
 
-      a {
+      .contactList {
         display: flex;
-        align-items: center;
-        color: var(--c-neutral-300);
-        font-size: clamp(0.875rem, 1.75vw, 1rem);
+        flex-direction: column;
+        gap: 0.875rem;
 
-        svg {
-          width: 1.25em;
-          margin-right: 0.375rem;
+        a,
+        .locationMeta {
+          display: flex;
+          align-items: center;
+          gap: 0.625rem;
+          color: var(--c-neutral-200);
+          font-size: 0.9375rem;
+          text-decoration: none;
+          transition: color 0.2s ease, transform 0.2s ease;
+
+          svg {
+            width: 1.25em;
+            height: 1.25em;
+            flex-shrink: 0;
+            fill: var(--c-purple);
+          }
+
+          .phoneIcon,
+          .locIcon {
+            font-size: 1.1rem;
+            line-height: 1;
+          }
+        }
+
+        a:hover {
+          color: var(--c-cyan, #61dafb);
+          transform: translateX(3px);
         }
       }
     }
@@ -68,7 +106,8 @@
       top: -25%;
       left: -60px;
       transform: translateX(-100%);
-      // rotate: 90deg;
+      opacity: 0.35;
+      pointer-events: none;
     }
 
     .illustration_right {
@@ -77,6 +116,8 @@
       right: -290px;
       transform: translateX(100%);
       rotate: 90deg;
+      opacity: 0.35;
+      pointer-events: none;
     }
   }
 }

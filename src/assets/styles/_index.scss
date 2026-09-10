@@ -4,20 +4,49 @@
 @use './include-media.scss';
 @use './typography.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   background-color: var(--c-neutral-950);
+  color: var(--c-neutral-100);
+  position: relative;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(199, 120, 221, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 65%, rgba(97, 218, 251, 0.06) 0%, transparent 45%);
 
-  // col lighter background
+  // Subtle central layout column
   &::after {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: min(1110px, 90%);
+    width: min(1140px, 90%);
     height: 100%;
-    background-color: var(--c-neutral-900);
+    background-color: rgba(40, 44, 52, 0.4);
+    pointer-events: none;
     z-index: -1;
   }
+}
+
+// Custom cyber scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-neutral-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-neutral-800);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-purple);
 }

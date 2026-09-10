@@ -1,6 +1,5 @@
 :root {
-  --ff-primary: 'Fira Code', sans-serif;
-
+  --ff-primary: 'Fira Code', monospace;
 
   /**
    * COLORS
@@ -8,15 +7,28 @@
   // BASE
   --c-white: hsl(0, 0%, 100%);
   --c-black: hsl(0, 0%, 0%);
-  // THEME
+  
+  // THEME & ACCENTS
   --c-purple: #c778dd;
+  --c-purple-hover: #e094f3;
+  --c-purple-glow: rgba(199, 120, 221, 0.3);
+  --c-cyan: #61dafb;
+  --c-cyan-glow: rgba(97, 218, 251, 0.25);
+  --c-green: #98c379;
 
   // NEUTRAL 
   --c-neutral-100: #f0f0f0;
+  --c-neutral-200: #d5d9e2;
   --c-neutral-300: #abb2bf;
-  --c-neutral-900: #2a2e35;
-  --c-neutral-950: #282c33;
+  --c-neutral-700: #495162;
+  --c-neutral-800: #353b45;
+  --c-neutral-900: #282c34;
+  --c-neutral-950: #21252b;
 
-  // 
-  --g-width: min(1110px, 90%);
+  // GLASS & BLURS
+  --c-glass-bg: rgba(33, 37, 43, 0.75);
+  --c-glass-border: rgba(255, 255, 255, 0.1);
+
+  // GLOBAL
+  --g-width: min(1140px, 90%);
 }
